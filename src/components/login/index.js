@@ -25,7 +25,7 @@ class Login extends Component {
 
     const { username, password } = this.state;
 
-    if (username === "Nani" && password === "Priya") {
+    if (username === "Nani" && password === "Nani123") {
       const jwtToken = "Ganesha";
 
       Cookies.set("jwt_token", jwtToken, {
