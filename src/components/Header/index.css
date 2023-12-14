@@ -1,0 +1,29 @@
+.logoutButton{
+    background-color: white;
+    margin-right:30px;
+    border-radius: 5px;
+    border:0px;
+    height:25px;
+    color: black;
+}
+
+.logoutSection{
+  background-color: black;
+  opacity: 0.7;
+  width:100vw;
+  height:7vh;
+  display:flex;
+  justify-content: flex-end;
+  align-items: center;
+ 
+}
+@media screen and (min-width:768px){
+  .logoutButton{
+    
+    
+    width:80px;
+    height:30px;
+    font-size:18px;
+    
+}
+}

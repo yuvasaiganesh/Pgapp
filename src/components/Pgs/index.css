@@ -1,0 +1,111 @@
+.allPgs{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width:60vw;
+    flex-wrap:wrap;
+    align-self: flex-start;
+   
+    background-color: black;
+    border-top-right-radius: 35px;
+
+    opacity: 0.7;
+    margin-bottom: 30px;
+
+    
+    
+    
+}
+.eachPg{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:50vw;
+    height:20vh;
+    margin:20px;
+    background-color:white;
+   opacity: 1;
+    border: 0px;
+    border-radius: 10px;
+   
+    
+    
+}
+.pgSection{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100vw;
+    align-items: center;
+    background-image: url("https://www.travelonline.com/thailand/khao-lak/accommodation/bangsak-merlin-resort/swimming-pool-64225-crop.jpg");
+    background-size: cover;
+   
+}
+
+
+
+.pgHeading{
+    font-size:25px;
+    font-family: 'Roboto';
+    color:white
+}
+.pgName{
+    font-size:22px;
+    font-family: 'Roboto';
+    color:black;
+    
+} 
+.pgAddress{
+    font-size:15px;
+    font-family: 'Roboto';
+    color:black;
+    
+}
+
+@media screen and (min-width:768px){
+    .pgName{
+        font-size:35px;
+        
+        
+    } 
+    .pgAddress{
+        font-size:25px;
+        
+        
+    }
+    .pgHeading{
+        font-size:45px;
+        
+    }
+}
+
+@media screen and (min-width:1024px){
+.allPgs{
+
+    width:40vw; 
+}
+.eachPg{
+    
+    width:30vw;
+    height:20vh;
+}
+
+
+
+
+.pgHeading{
+    font-size:40px;
+    
+}
+.pgName{
+    font-size:25px;
+    
+    
+} 
+.pgAddress{
+    font-size:18px;
+    
+    
+}
+}

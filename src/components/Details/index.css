@@ -1,0 +1,178 @@
+.firstColor{
+    background-color:Green;
+    height:25px;
+    width:60px;
+    border:0px;
+    border-radius: 3px;
+    color:white;
+    font-size:10px
+}
+.secondColor{
+    background-color:Red;
+    height:25px;
+    width:60px;
+    border:0px;
+    border-radius: 3px;
+    color:white;
+    font-size:10px
+}
+.eachRoom{
+    display: flex;
+    justify-content: space-between;
+    width:80vw;
+    
+    
+    
+}
+.detailPage{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height:100vh;
+    background-image:url("https://images.ixigo.com/image/upload/hotel/c_fill,w_700,h_700/jaipur-jantar-hostel-jaipur-image-5ca1e636cdc1f61523477323");
+    background-size: cover;
+}
+.roomSection{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width:90vw;
+    height:70vh;
+    flex-wrap: wrap;
+    background-color: black;
+    opacity: 0.7;
+    border-radius: 10px;
+}
+
+.backButton{
+    background-color: red;
+    align-self: flex-end;
+    color: white;
+    height:35px;
+    width:80px;
+    border-radius: 5px;
+    border: none;
+    margin: 20px;
+    font-size: 18px;
+}
+
+.beds{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width:60vw
+    
+}
+
+.roomHeading{
+    font-size:16px;
+    color:white
+}
+
+.mainheading{
+    font-size:35px;
+    color:black
+}
+@media screen and (min-width:768px){
+.firstColor{
+   width:80px;
+   font-size:13px
+}
+.secondColor{
+    width:80px;
+    font-size:13px
+}
+.eachRoom{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width:40vw;
+    
+    
+    
+}
+
+.roomSection{
+    
+    flex-direction: row;
+    
+}
+
+.beds{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width:35vw
+    
+}
+
+.roomHeading{
+    font-size:18px;
+    color:white
+}
+
+.mainheading{
+    font-size:40px;
+    color:black
+}
+}
+
+@media screen and (min-width:1024px){
+    .firstColor{
+        
+        height:25px;
+        width:80px;
+        
+    }
+    .secondColor{
+       
+        height:25px;
+        width:80px;
+       
+    }
+    .eachRoom{
+        display: flex;
+        flex-direction: column;
+        
+        justify-content: space-around;
+        align-items: center;
+        width:40vw;
+        
+        
+        
+    }
+    
+    .roomSection{
+        display: flex;
+        flex-direction: row;
+        
+        align-items: center;
+        width:80vw;
+        height:70vh;
+        
+      
+    }
+    
+   
+    
+    .beds{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width:30vw
+        
+    }
+    
+    .roomHeading{
+        font-size:18px;
+        color:white
+    }
+    
+    .mainheading{
+        font-size:40px;
+       
+    }
+    }
