@@ -33,7 +33,7 @@ class Login extends Component {
       });
       this.setState({ isLoggedIn: true });
     } else {
-      this.setState({ error: "Invalid Password or UserName", login: true });
+      this.setState({ error: "Invalid Username or Password", isError: true });
     }
   };
 
@@ -78,7 +78,7 @@ class Login extends Component {
           <button className="loginButton" type="submit">
             Login
           </button>
-          {isError && <p>{error}</p>}
+          {isError && <p className="error">{error}</p>}
         </form>
       </div>
     );

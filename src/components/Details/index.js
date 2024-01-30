@@ -3,6 +3,8 @@ import {useContext,useEffect,useState} from "react"
 import {Contextdata} from "../../context/FirstContext"
 import "./index.css"
 
+import 'reactjs-popup/dist/index.css';
+
 const Pglist=[ {
     id:1,
     rooms:[{
@@ -513,7 +515,7 @@ const Details=() =>{
     
    
 
-useEffect(()=>{getdetails(); changeStatus()},[finalList,firstSet,secondSet,thirdSet])
+useEffect(()=>{getdetails(); changeStatus()},[firstSet,secondSet,thirdSet])
 
    const data=useContext(Contextdata)
    const getdetails=()=>{
@@ -532,39 +534,93 @@ useEffect(()=>{getdetails(); changeStatus()},[finalList,firstSet,secondSet,third
 
     const first=(num)=>{
         let  updateSet
-        if (firstSet.includes(num)){
+
+        
+         let totalLength=firstSet.length+secondSet.length+thirdSet.length
+       
+        if (firstSet.includes(num) || totalLength===4){
               updateSet=firstSet.filter(each=>each!==num)
         }
+    
         else{
+          const room= initialList.rooms.filter((bed)=>bed.room===num)
+         
+          if (room[0].bed1==="ok"){
             updateSet=[...firstSet,num]
+                    }
+              
+            else{
+                updateSet=[...firstSet]
+            }
+            
         }
+           
+        
+        
        setFirstSet(updateSet)
        
            
  }
 
-    const second=(num)=>{
-        let  updateSet
-        if (secondSet.includes(num)){
-              updateSet=secondSet.filter(each=>each!==num)
-        }
+ const second=(num)=>{
+    let  updateSet
+
+    
+     let totalLength=firstSet.length+secondSet.length+thirdSet.length
+   
+    if (secondSet.includes(num) || totalLength===4){
+          updateSet=secondSet.filter(each=>each!==num)
+    }
+
+    else{
+      const room= initialList.rooms.filter((bed)=>bed.room===num)
+     
+      if (room[0].bed2==="ok"){
+        updateSet=[...secondSet,num]
+                }
+          
         else{
-            updateSet=[...secondSet,num]
+            updateSet=[...secondSet]
         }
-        setSecondSet(updateSet)
         
+    }
+       
+    
+    
+   setSecondSet(updateSet)
+   
+       
 }
 
- const third=(num)=>{
+const third=(num)=>{
     let  updateSet
-        if (thirdSet.includes(num)){
-              updateSet=thirdSet.filter(each=>each!==num)
-        }
+
+    
+     let totalLength=firstSet.length+secondSet.length+thirdSet.length
+   
+    if (thirdSet.includes(num) || totalLength===4){
+          updateSet=thirdSet.filter(each=>each!==num)
+    }
+
+    else{
+      const room= initialList.rooms.filter((bed)=>bed.room===num)
+      
+      if (room[0].bed3==="ok"){
+        updateSet=[...thirdSet,num]
+                }
+          
         else{
-            updateSet=[...thirdSet,num]
-        }
-         setThirdSet(updateSet)
+           updateSet=[...thirdSet]
         
+        }
+        
+    }
+       
+    
+    
+   setThirdSet(updateSet)
+   
+       
 }
 
 
@@ -620,7 +676,7 @@ const  changeStatus=async()=> {
 
 
    
-   const  firstBed=async()=> {
+   const  confirmBeds=async()=> {
 
        const updateList=finalList.filter(each => each.id===initialList.id);
        console.log(updateList)
@@ -648,7 +704,10 @@ const  changeStatus=async()=> {
     
 
 const toConfirm=()=>{
-        firstBed();
+
+   
+    confirmBeds()
+        
     }
 
 

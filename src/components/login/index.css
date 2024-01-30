@@ -51,7 +51,11 @@ form {
     width: 40vw;
   }
 
-  
+  .error{
+    color:red;
+    font-family: "Roboto";
+    padding:20px;
+  }
 
   @media screen and (min-width:768px){
     form {
