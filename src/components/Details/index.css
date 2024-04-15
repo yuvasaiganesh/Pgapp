@@ -1,178 +1,139 @@
 .firstColor{
     background-color:Green;
     height:25px;
-    width:60px;
+    width:25vw;
+    max-width: 100px;
     border:0px;
     border-radius: 3px;
     color:white;
-    font-size:10px
+    font-size:4vw;
+    margin-left: 5px;
+   
 }
 .secondColor{
     background-color:Red;
     height:25px;
-    width:60px;
+    width:25vw;
+    max-width: 100px;
     border:0px;
     border-radius: 3px;
     color:white;
-    font-size:10px
+    font-size:4vw; margin-left: 5px;
+}
+
+.thirdColor{
+    background-color:white;
+    height:25px;
+    width:30vw;
+    max-width: 100px;
+    border:0px;
+    border-radius: 3px;
+    color:black;
+    font-size:4vw; margin-left: 5px;
 }
 .eachRoom{
+    
     display: flex;
-    justify-content: space-between;
-    width:80vw;
+    align-items: center;
+    justify-content: space-around;
+    padding: 5px ;
+    margin: 5px;
     
+    border-radius: 5px;
     
-    
+       
 }
 .detailPage{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    height:100vh;
-    background-image:url("https://images.ixigo.com/image/upload/hotel/c_fill,w_700,h_700/jaipur-jantar-hostel-jaipur-image-5ca1e636cdc1f61523477323");
+    min-height:100vh;
+    background-image:url("https://www.persiantouring.com/wp-content/uploads/2014/11/Hotels-BG-3.jpg");
     background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    width:100vw;
+    
 }
 .roomSection{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    width:90vw;
-    height:70vh;
-    flex-wrap: wrap;
+    height:auto;
     background-color: black;
-    opacity: 0.7;
+    opacity: 0.8;
+    
     border-radius: 10px;
+    width: 95vw;
+    max-width: 500px;
+    overflow: auto;
+
 }
 
 .backButton{
     background-color: red;
-    align-self: flex-end;
+    
     color: white;
-    height:35px;
-    width:80px;
+    height:auto;
+    width:20vw;
+    max-width: 120px;
     border-radius: 5px;
     border: none;
-    margin: 20px;
-    font-size: 18px;
+    margin: 5vw;
+    font-size: 4vw;
 }
 
 .beds{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width:60vw
+    
     
 }
 
 .roomHeading{
-    font-size:16px;
+    
+    font-size:4vw;
     color:white
 }
 
 .mainheading{
-    font-size:35px;
-    color:black
+    font-size:6vw;
+    color:white;
+    font-family: 'Courier New', Courier, monospace;
 }
-@media screen and (min-width:768px){
+@media screen and (min-width:400px){
 .firstColor{
-   width:80px;
+   
    font-size:13px
 }
 .secondColor{
-    width:80px;
+   
     font-size:13px
 }
-.eachRoom{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    width:40vw;
+.thirdColor{
+   
+    font-size:13px
+}
+.backButton{
     
-    
-    
+    font-size: 18px;
 }
 
-.roomSection{
-    
-    flex-direction: row;
-    
-}
 
-.beds{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width:35vw
-    
-}
+
+
 
 .roomHeading{
     font-size:18px;
-    color:white
+   
 }
 
 .mainheading{
-    font-size:40px;
-    color:black
+    font-size:30px;
+    
 }
 }
 
-@media screen and (min-width:1024px){
-    .firstColor{
-        
-        height:25px;
-        width:80px;
-        
-    }
-    .secondColor{
-       
-        height:25px;
-        width:80px;
-       
-    }
-    .eachRoom{
-        display: flex;
-        flex-direction: column;
-        
-        justify-content: space-around;
-        align-items: center;
-        width:40vw;
-        
-        
-        
-    }
-    
-    .roomSection{
-        display: flex;
-        flex-direction: row;
-        
-        align-items: center;
-        width:80vw;
-        height:70vh;
-        
-      
-    }
-    
-   
-    
-    .beds{
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        width:30vw
-        
-    }
-    
-    .roomHeading{
-        font-size:18px;
-        color:white
-    }
-    
-    .mainheading{
-        font-size:40px;
-       
-    }
-    }

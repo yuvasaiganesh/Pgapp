@@ -3,13 +3,15 @@
     justify-content: space-around;
     align-items: center;
     width:60vw;
+    max-width: 300px;
     flex-wrap:wrap;
     align-self: flex-start;
-   
-    background-color: black;
+    background-color:black;
+    
+    opacity: 0.8;
     border-top-right-radius: 35px;
 
-    opacity: 0.7;
+    
     margin-bottom: 30px;
 
     
@@ -22,10 +24,11 @@
     justify-content: center;
     align-items: center;
     width:50vw;
-    height:20vh;
+    max-width: 250px;
+    height:auto;
     margin:20px;
-    background-color:white;
-   opacity: 1;
+    background-color:rgba(72, 201, 240, 0.733);
+   
     border: 0px;
     border-radius: 10px;
    
@@ -38,74 +41,55 @@
     justify-content: space-between;
     width: 100vw;
     align-items: center;
-    background-image: url("https://www.travelonline.com/thailand/khao-lak/accommodation/bangsak-merlin-resort/swimming-pool-64225-crop.jpg");
+    background-image: url("https://www.persiantouring.com/wp-content/uploads/2014/11/Hotels-BG-3.jpg");
+    
     background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+   
+
+     
    
 }
 
 
 
 .pgHeading{
-    font-size:25px;
-    font-family: 'Roboto';
-    color:white
+    font-size:6vw;
+    font-family:'Courier New', Courier, monospace;
+    color:white;
+    
+    
 }
 .pgName{
-    font-size:22px;
+    font-size:4vw;
     font-family: 'Roboto';
     color:black;
+    font-weight: bold;
+   
     
 } 
 .pgAddress{
-    font-size:15px;
+    font-size:3vw;
     font-family: 'Roboto';
     color:black;
-    
+    font-weight: bold;
 }
 
-@media screen and (min-width:768px){
+@media screen and (min-width:500px){
     .pgName{
-        font-size:35px;
+        font-size:20px;
         
         
     } 
     .pgAddress{
-        font-size:25px;
+        font-size:18px;
         
         
     }
     .pgHeading{
-        font-size:45px;
+        font-size:30px;
         
     }
 }
 
-@media screen and (min-width:1024px){
-.allPgs{
-
-    width:40vw; 
-}
-.eachPg{
-    
-    width:30vw;
-    height:20vh;
-}
-
-
-
-
-.pgHeading{
-    font-size:40px;
-    
-}
-.pgName{
-    font-size:25px;
-    
-    
-} 
-.pgAddress{
-    font-size:18px;
-    
-    
-}
-}

@@ -4,6 +4,7 @@ import {Contextdata} from "../../context/FirstContext"
 import "./index.css"
 
 import 'reactjs-popup/dist/index.css';
+import Header from "../Header";
 
 const Pglist=[ {
     id:1,
@@ -753,6 +754,7 @@ const colors=(item)=>{
     return(
 
     <div className="detailPage">
+        <Header/>
         <h1 className="mainheading">Pick Your Bed</h1>
         <div className="roomSection">
         {initialList.rooms.map((each,index)=>{
@@ -773,7 +775,7 @@ const colors=(item)=>{
                     <button onClick={()=>second(each.room)} className={color2}>{availble2}</button>
                     <button onClick={()=>third(each.room)} className={color3}>{availble3}</button>
                     </div>
-                    </div>
+                </div>
             )})
         }
         
@@ -782,7 +784,7 @@ const colors=(item)=>{
       </div>
       <div>
       <button className="backButton" onClick={toConfirm}>Confirm</button>
-      <button className="backButton" onClick={toback}>Back</button>
+  
       </div>
      
     </div>

@@ -53,7 +53,7 @@ class Login extends Component {
       <div className="loginSection">
         <form onSubmit={this.toSubmit}>
           <h1 className="heading">Welcome Back</h1>
-          <div className="label">
+          <div className="labelSection">
             <label htmlFor="name">Username</label>
             <input
               id="name"
@@ -64,7 +64,7 @@ class Login extends Component {
               autoComplete="off"
             />
           </div>
-          <div className="label">
+          <div className="labelSection">
             <label htmlFor="pass">Password</label>
             <input
               id="pass"

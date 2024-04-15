@@ -11,10 +11,17 @@ const Header=()=>{
     
     history("/login");
   };
+  const toHome=(event)=>{
+    event.preventDefault();
+
+
+history("/");
+};
     
     return(
-        <div className="logoutSection">
-            <button className="logoutButton" onClick={toLogout}>Logout</button>
+        <div className="nav">
+             <button className="navButton" onClick={toHome}>Home</button>
+            <button className="navButton" onClick={toLogout}>Logout</button>
         </div>
     )
 }
