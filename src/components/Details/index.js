@@ -529,9 +529,7 @@ useEffect(()=>{getdetails(); changeStatus()},[firstSet,secondSet,thirdSet])
 
     const navigate=useNavigate()
 
-    const toback=()=>{
-        navigate("/")
-}
+  
 
     const first=(num)=>{
         let  updateSet

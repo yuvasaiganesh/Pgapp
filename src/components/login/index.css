@@ -16,8 +16,12 @@ form {
     justify-content: flex-end;
     background-image: url("https://images.pexels.com/photos/16379061/pexels-photo-16379061/free-photo-of-m-ong-thanh-luxury-nha-trang-hotel.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
     background-size: cover;
+    background-attachment: fixed;
     height: 100vh;
     align-items: center;
+    width:100vw;
+    margin: 0px;
+
     
   }
   

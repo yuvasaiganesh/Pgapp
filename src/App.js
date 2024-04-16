@@ -6,8 +6,8 @@ import Pgnames from "./components/Pgs";
 import Details from "./components/Details";
 
 import ProtectedRoute from "./components/ProtectedRoute";
-import "./App.css"
 
+import "./App.css"
 function App() {
   return (
     <Routes>
